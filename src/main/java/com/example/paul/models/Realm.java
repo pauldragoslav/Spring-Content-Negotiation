@@ -5,7 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 @Entity
 @Table(name = "user_realm")
-@SequenceGenerator(name = "user_realm_seq", sequenceName = "user_realm_sequence")
+@SequenceGenerator(name = "user_realm_seq", sequenceName = "user_realm_sequence", allocationSize = 1)
 public class Realm {
 
     @Id
